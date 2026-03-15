@@ -1,20 +1,34 @@
 # ActivityPub-test for Deno
- 
+
+This project provides a simple ActivityPub server built with Deno.
+
+## Features
+
+- Implements the ActivityPub protocol
+- Supports creating, sharing, and receiving ActivityPub notes
+- Customizable entrypoint URL
+
 ## Usage
 
-set your entrypoint on endpoint.txt
-```
-https://example.com/
-```
+1. Set your entrypoint URL in the `entrypoint.txt` file:
+   ```
+   https://example.com/
+   ```
 
-run on server with port number
-```sh
-deno run -A server.js 8015
-```
+2. Run the server with the desired port number:
+   ```sh
+   deno run -A server.js 8015
+   ```
 
-## To check
+## Fetching Data
 
-fetch with Accept application/acitivity+json
+To check the server's behavior, fetch content with the `Accept: application/activity+json` header:
 ```sh
 deno run -A client.js [url]
 ```
+
+## License
+
+This project is licensed under the MIT License.
+
+Copyright (c) 2024 Taisuke Fukuno
