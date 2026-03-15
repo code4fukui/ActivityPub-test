@@ -1,28 +1,34 @@
 # ActivityPub-test for Deno
 
-ActivityPubのテストプロジェクトです。Deno上でActivityPubサーバを簡単に構築できます。
+このプロジェクトは、Denoで構築したシンプルなActivityPubサーバを提供します。
+
+## 機能
+
+- ActivityPubプロトコルを実装
+- ActivityPubノートの作成、共有、受信をサポート
+- エントリポイントURLをカスタマイズ可能
 
 ## 使い方
 
-`entrypoint.txt`にドメイン名を設定してください。
-```
-https://example.com/
-```
+1. `entrypoint.txt`にエントリポイントURLを設定します:
+   ```
+   https://your-domain.example/
+   ```
 
-サーバを起動します。
-```sh
-deno run -A server.js 8015
-```
+2. 指定のポート番号でサーバを実行します:
+   ```sh
+   deno run -A server.js 8015
+   ```
 
-## 動作確認
+## データ・API
 
-`Accept: application/activity+json`ヘッダを付けてフェッチします。
+サーバの動作を確認するには、`Accept: application/activity+json`ヘッダを付けてフェッチします:
 ```sh
 deno run -A client.js [url]
 ```
 
 ## ライセンス
 
-MIT License
+このプロジェクトはMITライセンスの下で提供されています。
 
 Copyright (c) 2024 Taisuke Fukuno

@@ -1,5 +1,7 @@
 # ActivityPub-test for Deno
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 This project provides a simple ActivityPub server built with Deno.
 
 ## Features
@@ -12,7 +14,7 @@ This project provides a simple ActivityPub server built with Deno.
 
 1. Set your entrypoint URL in the `entrypoint.txt` file:
    ```
-   https://example.com/
+   https://your-domain.example/
    ```
 
 2. Run the server with the desired port number:
