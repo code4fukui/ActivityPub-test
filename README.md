@@ -31,6 +31,4 @@ deno run -A client.js [url]
 
 ## License
 
-This project is licensed under the MIT License.
-
-Copyright (c) 2024 Taisuke Fukuno
+MIT License — see [LICENSE](LICENSE).

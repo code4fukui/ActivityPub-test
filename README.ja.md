@@ -1,16 +1,16 @@
 # ActivityPub-test for Deno
 
-このプロジェクトは、Denoで構築したシンプルなActivityPubサーバを提供します。
+このプロジェクトは、Denoで実装したシンプルな ActivityPub サーバを提供します。
 
 ## 機能
 
-- ActivityPubプロトコルを実装
-- ActivityPubノートの作成、共有、受信をサポート
-- エントリポイントURLをカスタマイズ可能
+- ActivityPub プロトコルの実装
+- ActivityPub ノートの作成、共有、受信をサポート
+- エントリポイントURLのカスタマイズ
 
 ## 使い方
 
-1. `entrypoint.txt`にエントリポイントURLを設定します:
+1. `entrypoint.txt` にエントリポイントURLを設定します:
    ```
    https://your-domain.example/
    ```
@@ -22,7 +22,7 @@
 
 ## データ・API
 
-サーバの動作を確認するには、`Accept: application/activity+json`ヘッダを付けてフェッチします:
+サーバの動作を確認するには、`Accept: application/activity+json` ヘッダを付けてフェッチします:
 ```sh
 deno run -A client.js [url]
 ```
